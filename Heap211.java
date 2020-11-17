@@ -9,13 +9,13 @@ public class Heap211 {
         size = 0;
     }
     int parent(int index) {
-    	return index / 2;
+    	return index / 3;
     }
     int leftChild(int index) {
-    	return index * 2;
+    	return index * 3;
     }     
     int rightChild(int index) {
-        return index * 2 + 1;
+        return index * 3 + 1;
     }     
     boolean hasParent(int index) {
         return index > 1;
